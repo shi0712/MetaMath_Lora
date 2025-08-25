@@ -413,7 +413,7 @@ def parse_arguments() -> Config:
                        help="Log every N steps")
     parser.add_argument("--use_fp16", action="store_true",
                        help="Use mixed precision training")
-    parser.add_argument("--random_seed", type=int, default=2024,
+    parser.add_argument("--random_seed", type=int, default=42,
                        help="Random seed")
     
     args = parser.parse_args()
